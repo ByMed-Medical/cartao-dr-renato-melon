@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Digital - Dr. Renato Melon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+        <!-- Cabeçalho -->
+        <div class="bg-gradient-to-r from-indigo-700 to-blue-800 text-white p-8 text-center">
+            <img src="https://i.ibb.co/0jDwxnc4/Dr-Renato-Melon.png"
+                 alt="Dr. Renato Melon"
+                 class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl object-cover">
+            <h1 class="text-2xl font-bold mt-4">Dr. Renato Melon</h1>
+            <p class="text-indigo-100 font-medium">Urologista • Cirurgia Urológica</p>
+            <p class="text-sm mt-1">CRM-AL 7478</p>
+            <p class="text-sm mt-2 font-semibold">Maceió - Alagoas</p>
+        </div>
+
+        <!-- Abas clicáveis -->
+        <div class="flex border-b bg-white overflow-x-auto">
+            <button onclick="abrirAba(0)" id="btn-0"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-indigo-700 border-b-2 border-indigo-700">Perfil</button>
+            <button onclick="abrirAba(1)" id="btn-1"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-600">Serviços</button>
+            <button onclick="abrirAba(2)" id="btn-2"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-600">Locais</button>
+            <button onclick="abrirAba(3)" id="btn-3"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-600">Contato</button>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="p-6 min-h-[380px]">
+
+            <!-- Aba Perfil -->
+            <div id="aba-0" class="tab-content block">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Olá! Sou o Dr. Renato Melon, urologista com foco em cirurgia urológica.
+                    Atuo com dedicação no diagnóstico precoce, tratamento minimamente invasivo e cuidado integral da saúde urológica masculina.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="bg-indigo-50 p-4 rounded-2xl">
+                        <p class="text-3xl">🩺</p>
+                        <p class="text-xs text-gray-600 mt-2 font-medium">Urologista e Cirurgia Urológica</p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-2xl">
+                        <p class="text-3xl">🚀</p>
+                        <p class="text-xs text-gray-600 mt-2 font-medium">Diagnóstico Precoce</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba Serviços -->
+            <div id="aba-1" class="tab-content">
+                <h3 class="font-bold text-lg mb-4 text-indigo-800">Principais serviços e procedimentos</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">🔹 Consulta urológica completa</li>
+                    <li class="flex items-start gap-3">🔹 Videolaparoscopia urológica</li>
+                    <li class="flex items-start gap-3">🔹 Vasectomia e reversão</li>
+                    <li class="flex items-start gap-3">🔹 Disfunção erétil e andrologia</li>
+                    <li class="flex items-start gap-3">🔹 Circuncisão e procedimentos ambulatoriais</li>
+                </ul>
+            </div>
+
+            <!-- Aba Locais -->
+            <div id="aba-2" class="tab-content">
+                <h3 class="font-bold text-lg mb-4 text-indigo-800">Locais de Atendimento</h3>
+                <div class="space-y-5 text-sm">
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <p class="font-semibold">Harmony Medical Center (Jatiúca)</p>
+                        <p class="text-gray-600">Quinta-feira • 07:30h</p>
+                        <a href="tel:8221260780" class="text-indigo-600">☎️ (82) 2126-0780</a> /
+                        <a href="https://wa.me/558221260780" class="text-green-600">WhatsApp</a>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <p class="font-semibold">Hospital Veredas (Gruta de Lourdes)</p>
+                        <p class="text-gray-600">Terça • 11h | Sexta • 15h</p>
+                        <a href="tel:8235125444" class="text-indigo-600">☎️ (82) 3512-5444</a> /
+                        <a href="https://wa.me/558235125444" class="text-green-600">WhatsApp</a>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <p class="font-semibold">Hospital Vida (Ponta Verde)</p>
+                        <p class="text-gray-600">Terça • 14h | Sexta • 13h</p>
+                        <a href="tel:8232149700" class="text-indigo-600">☎️ (82) 3214-9700</a> /
+						<a href="https://wa.me/558232149700" class="text-green-600">WhatsApp</a>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <p class="font-semibold">Centro Médico Servimed - Parque Shopping Maceió</p>
+                        <p class="text-gray-600">Quarta-feira • 13h</p>
+                        <a href="tel:8233162147" class="text-indigo-600">☎️ (82) 3316-2147</a> /
+						<a href="https://wa.me/558233162147" class="text-green-600">WhatsApp</a>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <p class="font-semibold">Espaço Saúde Unimed Maceió (Barro Duro)</p>
+                        <p class="text-gray-600">Terça-feira • 12h</p>
+                        <a href="tel:8231942700" class="text-indigo-600">☎️ (82) 3194-2700</a> (opção 01)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba Contato -->
+            <div id="aba-3" class="tab-content">
+                <div class="space-y-6 text-center py-4">
+                    <a href="tel:+5521997870110" class="flex items-center justify-center gap-4 p-5 bg-indigo-50 hover:bg-indigo-100 rounded-3xl transition">
+                        <span class="text-3xl">📞</span>
+                        <div class="text-left">
+                            <p class="font-bold text-lg text-indigo-800">+55 21 99787-0110</p>
+                            <p class="text-sm text-gray-600">Ligar ou WhatsApp principal</p>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5521997870110?text=Ol%C3%A1%20Dr.%20Renato,%20gostaria%20de%20agendar%20uma%20consulta"
+                       class="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg px-12 py-5 rounded-3xl shadow-lg hover:scale-105 transition">
+                        FALAR NO WHATSAPP AGORA
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">Contato médico</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 py-4 text-center text-xs text-gray-500 border-t">
+            Saúde urológica com atenção e excelência • Compartilhe com quem precisa️
+        </div>
+    </div>
+
+    <script>
+        function abrirAba(n) {
+            document.querySelectorAll('.tab-content').forEach(aba => {
+                aba.classList.add('hidden');
+                aba.classList.remove('block');
+            });
+            document.getElementById('aba-' + n).classList.remove('hidden');
+            document.getElementById('aba-' + n).classList.add('block');
+
+            document.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('text-indigo-700', 'border-b-2', 'border-indigo-700');
+                btn.classList.add('text-gray-600');
+            });
+            document.getElementById('btn-' + n).classList.add('text-indigo-700', 'border-b-2', 'border-indigo-700');
+        }
+
+        window.onload = () => abrirAba(0);
+    </script>
+</body>
+</html>
